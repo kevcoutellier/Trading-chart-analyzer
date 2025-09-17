@@ -1,0 +1,19 @@
+{
+  "functions": {
+    "api/analyze-chart.js": {
+      "maxDuration": 30
+    },
+    "api/web-search.js": {
+      "maxDuration": 15
+    },
+    "api/search-news.js": {
+      "maxDuration": 15
+    }
+  },
+  "env": {
+    "ANTHROPIC_API_KEY": "@anthropic-api-key",
+    "GOOGLE_CLOUD_API_KEY": "@google-cloud-api-key",
+    "NEWS_API_KEY": "@news-api-key",
+    "ALPHA_VANTAGE_API_KEY": "@alpha-vantage-api-key"
+  }
+}
