@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Upload, BarChart3, TrendingUp, TrendingDown, DollarSign, AlertCircle } from 'lucide-react';
+import { useState } from 'react';
+import { Upload, BarChart3, TrendingUp, TrendingDown, AlertCircle } from 'lucide-react';
 import ImageUploader from './components/ImageUploader';
 import AnalysisResult from './components/AnalysisResult';
 import NewsAnalysis from './components/NewsAnalysis';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { TrendingUp, TrendingDown, Target, Shield, BarChart3, AlertTriangle, Clock, Volume2, Activity, Zap, DollarSign, Signal } from 'lucide-react';
+import { TrendingUp, TrendingDown, Target, Shield, BarChart3, AlertTriangle, Clock, Activity, Zap, DollarSign, Signal } from 'lucide-react';
 
 interface AnalysisData {
   signal: 'LONG' | 'SHORT' | 'NEUTRAL';

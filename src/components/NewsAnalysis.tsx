@@ -20,7 +20,7 @@ interface NewsAnalysisProps {
 const NewsAnalysis: React.FC<NewsAnalysisProps> = ({ symbol }) => {
   const [news, setNews] = useState<NewsItem[]>([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+  const [, setError] = useState<string | null>(null);
   const [marketSentiment, setMarketSentiment] = useState<{
     overall: 'bullish' | 'bearish' | 'neutral';
     score: number;
