@@ -1,0 +1,48 @@
+{
+  "name": "trading-chart-analyzer",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:api": "node server.js",
+    "dev:api:pm2": "npx pm2 start ecosystem.config.cjs",
+    "dev:full": "concurrently \"npm run dev:api\" \"npm run dev\"",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "pm2:start": "npx pm2 start ecosystem.config.cjs",
+    "pm2:stop": "npx pm2 stop trading-api",
+    "pm2:restart": "npx pm2 restart trading-api",
+    "pm2:status": "npx pm2 list",
+    "pm2:logs": "npx pm2 logs trading-api"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.59.0",
+    "autoprefixer": "^10.4.21",
+    "axios": "^1.11.0",
+    "framer-motion": "^10.18.0",
+    "lucide-react": "^0.263.1",
+    "postcss": "^8.5.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.33.0",
+    "@types/react": "^18.3.23",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^4.7.0",
+    "concurrently": "^9.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "eslint": "^9.33.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "express": "^5.1.0",
+    "globals": "^16.3.0",
+    "tailwindcss": "^3.4.17",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.39.1",
+    "vite": "^4.5.14"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run dev:*)",
+      "Bash(node server.js)",
+      "Bash(node:*)",
+      "Bash(pkill:*)",
+      "Bash(true)",
+      "Bash(chmod:*)",
+      "Bash(npm install:*)",
+      "Bash(mkdir:*)",
+      "Bash(npx pm2 start:*)",
+      "Bash(mv:*)",
+      "Bash(npx pm2 list:*)",
+      "Bash(npx pm2 stop:*)",
+      "Bash(npx pm2 delete:*)",
+      "WebSearch",
+      "WebFetch(domain:developers.binance.com)",
+      "WebFetch(domain:dev.binance.vision)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:dev.to)",
+      "WebFetch(domain:www.binance.com)",
+      "WebFetch(domain:cointelegraph.com)",
+      "WebFetch(domain:www.coindesk.com)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
