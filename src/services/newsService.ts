@@ -98,7 +98,7 @@ export class NewsService {
   /**
    * Analyse le contenu des actualités avec IA pour déterminer sentiment et impact
    */
-  private async analyzeNewsContent(searchResults: any[], symbol: string): Promise<NewsArticle[]> {
+  private async analyzeNewsContent(searchResults: any[], _symbol: string): Promise<NewsArticle[]> {
     const articles: NewsArticle[] = [];
 
     for (let i = 0; i < searchResults.length; i++) {

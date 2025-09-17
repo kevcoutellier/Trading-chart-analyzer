@@ -56,7 +56,7 @@ export class ChartAnalysisService {
   /**
    * Traite les résultats de l'analyse IA
    */
-  private processAnalysisResult(analysisData: any, symbol: string): ChartAnalysis {
+  private processAnalysisResult(analysisData: any, _symbol: string): ChartAnalysis {
     console.log('DEBUG: Processing analysis data:', analysisData);
     
     return {
@@ -81,16 +81,6 @@ export class ChartAnalysisService {
     };
   }
 
-  /**
-   * Valide les données d'analyse
-   */
-  private validateAnalysis(analysis: ChartAnalysis): boolean {
-    return (
-      analysis.confidence >= 0 && 
-      analysis.confidence <= 100 &&
-      ['LONG', 'SHORT', 'NEUTRAL'].includes(analysis.signal)
-    );
-  }
 }
 
 // Instance singleton
